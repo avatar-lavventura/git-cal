@@ -3,6 +3,8 @@
 GitHub-style commit calendar in the terminal, with the Dracula color theme.
 A single-file Python port of [[https://github.com/k4rthik/git-cal][k4rthik/git-cal]]. No dependencies beyond Python 3 and git.
 
+[[file:screenshot.png]]
+
 * Install
 
 #+begin_src sh
