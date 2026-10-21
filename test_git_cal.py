@@ -16,4 +16,6 @@ assert gc.date_range(3, date(2026, 10, 13)) == (date(2026, 3, 1), date(2026, 4, 
 assert gc.date_range(12, date(2026, 10, 13)) == (date(2025, 12, 1), date(2026, 1, 1))
 assert gc.date_range(-1, date(2026, 1, 13)) == (date(2025, 12, 1), date(2026, 1, 14))
 assert gc.compute_stats(days, Counter())["q"] == (0, 0, 0)
+assert gc.date_range(None, date(2026, 10, 13)) == (date(2025, 10, 14), date(2026, 10, 14))
+assert gc.date_range(None, date(2026, 10, 13), 26) == (date(2026, 8, 9), date(2026, 10, 14))  # 10 weeks
 print("ok")
